@@ -1,4 +1,17 @@
-<!-- <!DOCTYPE html>
+<?php
+
+include "database.php";
+
+// "INSERT INTO cab1 (id) VALUES (NULL)";
+
+
+// $result = mysqli_query($link, "SELECT MAX(`number`) FROM `cab1`");
+// $number = mysqli_fetch_assoc($result);
+// echo $number['[MAX(`number`)'];
+// print_r($number);
+// echo "br";
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,8 +92,8 @@
             </div>
         </div>
     </div>
-    
-    <script>
+
+    <!-- <script>
         $(document).ready(function(){
             $(document.querySelector('.cab-1 p')).on('click', function() {
                 var numberblock11 = document.querySelector('.number-one').getAttribute('data-attr');
@@ -97,7 +110,7 @@
             .done(function( msg ) {
                 alert( "Data Saved: " + msg );
             });   
-    </script>
+    </script> -->
     <script src="index.js"></script>
 </body>
-</html>  -->
+</html> 

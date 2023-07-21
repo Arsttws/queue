@@ -144,6 +144,7 @@ echo $id['id']; ?>">-</p>
                 </div>                
             </div>
         </div>
+        <a href="admin.php">admin</a>
     </div>
     <script src="index.js"></script>
 </body>
