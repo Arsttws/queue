@@ -71,32 +71,32 @@ peopleInQueue5.innerHTML = `${cab5.length}`;
 
 let added = document.querySelector('.added-B')
 
-// JSON.parse(localStorage.getItem('cab1'))
+JSON.parse(localStorage.getItem('cab1'))
 
-// let a = 0;
+let a = 0;
 
-// giveTicket1.addEventListener('click', function(){
-//     a++;
-//     cab1.push(`A${('00' + a).slice(-2)}`);
-//     console.log('added succesfully')
-//     localStorage.setItem('cab1', JSON.stringify(cab1));
-//     peopleInQueue1.innerHTML = `${cab1.length}`; 
-// })
+giveTicket1.addEventListener('click', function(){
+    a++;
+    cab1.push(`A${('00' + a).slice(-2)}`);
+    console.log('added succesfully')
+    localStorage.setItem('cab1', JSON.stringify(cab1));
+    peopleInQueue1.innerHTML = `${cab1.length}`; 
+})
 
-// sendCab1.addEventListener('click', function(){
-//     peopleInQueue1.innerHTML = `${cab1.length}`; 
-//     if (cab1.length === 0){
-//         numberOne.innerHTML = '-';
-//         message.classList.remove('active');
-//     } else{
-//         numberOne.innerHTML = `${cab1.shift()}`;
-//         ticket.innerHTML = `${numberOne.innerHTML}`;
-//         cabinet.innerHTML = '101';
-//         message.classList.add('active');
-//         localStorage.setItem('cab1Send', JSON.stringify(cab1));
-//         localStorage.setItem('a', JSON.stringify(cab1));
-//     }
-// })
+sendCab1.addEventListener('click', function(){
+    peopleInQueue1.innerHTML = `${cab1.length}`; 
+    if (cab1.length === 0){
+        numberOne.innerHTML = '-';
+        message.classList.remove('active');
+    } else{
+        numberOne.innerHTML = `${cab1.shift()}`;
+        ticket.innerHTML = `${numberOne.innerHTML}`;
+        cabinet.innerHTML = '101';
+        message.classList.add('active');
+        localStorage.setItem('cab1Send', JSON.stringify(cab1));
+        localStorage.setItem('a', JSON.stringify(cab1));
+    }
+})
 
 let b = 0;
 
@@ -191,21 +191,4 @@ sendCab5.addEventListener('click', function(){
         cabinet.innerHTML = '105';
         message.classList.add('active');
     }
-})
-
-
-
-// window.addEventListener('Storage', event => {
-//     console.log('storage')
-// })
-
-var numberblock1 = document.querySelector('.number-one').getAttribute('data-attr');
-document.querySelector('.number-one').innerHTML = `A${('00' + numberblock1).slice(-2)}`;
-document.querySelector('.added-A').innerHTML = `A${('00' + numberblock1).slice(-2)}`;
-
-var sign1 = document.querySelector('.cab-1').getAttribute('data-attr');
-document.querySelector('.cab-1').addEventListener('click', function(){
-    print();
-    sign1;
-    console.log('added');
 })

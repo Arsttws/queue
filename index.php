@@ -55,9 +55,7 @@ include "database.php";
                             <p>Талон</p>
                         </div>
                         <div class="ticket-number">
-                            <p class="number-one" data-attr="<?php $result = mysqli_query($link, "SELECT * FROM cab1 ORDER BY id DESC LIMIT 0,1;");
-$id = mysqli_fetch_assoc($result);
-echo $id['id']; ?>">-</p>
+                            <p class="number-one">-</p>
                             <p class="number-two">-</p>
                             <p class="number-three">-</p>
                             <p class="number-four">-</p>
@@ -81,20 +79,20 @@ echo $id['id']; ?>">-</p>
                 <div class="get">  
                     <p>Записать</p>
                 </div>
-                <div class="cab-1" data-attr="<?php "INSERT INTO `cab1` (`id`) VALUES (NULL);"; ?>">
-                    <p>Кабинет 101: Юрист</p>
+                <div class="cab-1">
+                    <p>Кабинет 101</p>
                 </div>
                 <div class="cab-2">
-                    <p>Кабинет 102: Врач</p>
+                    <p>Кабинет 102</p>
                 </div>
                 <div class="cab-3">
-                    <p>Кабинет 103: Экономист</p>
+                    <p>Кабинет 103</p>
                 </div>
                 <div class="cab-4">
-                    <p>Кабинет 104: Бухгалтер</p>
+                    <p>Кабинет 104</p>
                 </div>
                 <div class="cab-5">
-                    <p>Кабинет 105: Другое</p>
+                    <p>Кабинет 105</p>
                 </div>
             </div>
             <div class="next-person">
