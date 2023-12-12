@@ -78,8 +78,8 @@ let a = 0;
 giveTicket1.addEventListener('click', function(){
     a++;
     cab1.push(`A${('00' + a).slice(-2)}`);
-    console.log('added succesfully')
-    localStorage.setItem('cab1', JSON.stringify(cab1));
+    added.innerHTML = `A${('00' + a).slice(-2)}`
+    console.log('added succesfully');
     peopleInQueue1.innerHTML = `${cab1.length}`; 
 })
 
@@ -93,8 +93,6 @@ sendCab1.addEventListener('click', function(){
         ticket.innerHTML = `${numberOne.innerHTML}`;
         cabinet.innerHTML = '101';
         message.classList.add('active');
-        localStorage.setItem('cab1Send', JSON.stringify(cab1));
-        localStorage.setItem('a', JSON.stringify(cab1));
     }
 })
 
